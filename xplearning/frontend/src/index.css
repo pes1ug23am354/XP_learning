@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #f9fafb;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Segoe UI', Tahoma, sans-serif;
+  background: radial-gradient(circle at 20% 20%, #172554 0%, #0f172a 38%, #020617 100%);
+  min-height: 100vh;
+}
+
+.glass {
+  @apply backdrop-blur-xl bg-white/10 border border-white/20;
+}
+
+.neon-border {
+  box-shadow: 0 0 0.35rem rgba(255, 122, 24, 0.7), 0 0 1rem rgba(103, 232, 249, 0.3);
+}
+
+.node-line {
+  background: linear-gradient(90deg, rgba(255,122,24,0.6), rgba(103,232,249,0.8));
+}
